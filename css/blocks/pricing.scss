@@ -1,0 +1,129 @@
+.pricing{
+    background-color: #252B42;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 17px;
+    }
+
+    &__text{
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        max-width: 530px;
+        display: inline-block;
+        margin-bottom: 90px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item{
+        flex: 1;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        color: black;
+        padding: 40px;
+        margin-right: 50px;
+        max-width: 335px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &-title{
+            font-family: "Graphik Bold";
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+            margin-bottom: 3px;
+        }
+
+        &-text{
+            font-size: 16px;
+            letter-spacing: 0.1px;
+            color: #374754;
+            max-width: 148px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        &-cost{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+
+            &-content{
+                text-align: left;
+                margin-left: 10px;
+                padding-top: 15px;
+            }
+
+            &-value, &-currency{
+                font-family: "Graphik Bold";
+                font-size: 74px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+
+            &-currency{
+                font-size: 20px;
+            }
+
+            &-info{
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: #374754;
+            }
+        }
+
+        &-list{
+            margin-bottom: 30px;
+    
+            &-name{
+                font-size: 15px;
+                line-height: 28px;
+                color: #252B42;
+            }
+        }
+
+        &--mod{
+            background: #2091F9;
+            color:white;
+            padding: 83px 40px;
+
+            .pricing__item{
+                &-title, &-text {
+                    color: inherit;
+                }
+
+                &-cost {
+                    &-value, &-currency, &-info{
+                        color: inherit;
+                    }
+                }
+
+                &-list{
+                    &-name{
+                        color: inherit;
+                    }
+                }
+
+                &-button{
+                    background-color: white;
+                    color: #2091F9;
+                }
+            }
+        }
+    }
+   
+}
